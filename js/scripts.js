@@ -6,16 +6,24 @@ function Pizza(toppings, size){
   this.size = size;
 }
 
-//CHOOSE TOPPINGS AND SIZE
+var newPizza = new Pizza();
 
 //PROTOTYPE METHOD FOR COST DEPENDING ON SELECTIONS
-// Pizza.prototype.pizzaCost = function(){
-//     var result =
-//   };
+ Pizza.prototype.pizzaCost = function(){
+   var topCost = newPizza.toppings.length * 50
+
+   if(newPizza.size = "small"){
+     return topCost + 10;
+   }else if(newPizza.size = "medium"){
+     return topCost + 100;
+   }else{
+     return topCost + 1000;
+   }
+};
 
 $(document).ready(function(){
 
-  var newPizza = new Pizza();
+
 
   $('#form').submit(function(event){
     event.preventDefault();
@@ -28,6 +36,8 @@ $(document).ready(function(){
     newPizza.toppings.push(top)
 
     $('#results').text("your toppings are: " + newPizza.toppings + "your size is: " + newPizza.size);
+
+    $('#cost').text(newPizza.pizzaCost());
 
     });
   });

@@ -10,7 +10,7 @@
     <div class="container">
       <div class="jumbotron jumbotron-fluid">
         <h1 class="display-3">Order Pizza</h1>
-        <p class="lead">BLAH BLAH BLAH.</p>
+        <p class="lead">All toppings are $50 each.</p>
       </div>
     </div>
     <div class="container">
@@ -30,7 +30,7 @@
             </div>
             <div class="form-check form-check-inline">
               <label class="form-check-label">
-                <input class="form-check-input" type="radio" name="size" value="large" disabled>Large
+                <input class="form-check-input" type="radio" name="size" value="large">Large
               </label>
             </div>
           </div>
@@ -55,7 +55,12 @@
         </form>
       </div>
       <div class="row">
-        <div id="results">Test</div>
+        <div class="col-md-6">
+          <span id="results">Test</span>
+        </div>
+        <div class="col-md-6">
+          <strong>Cost: </strong><span id="cost"></span>
+        </div>
       </div>
     </div>
   </body>
