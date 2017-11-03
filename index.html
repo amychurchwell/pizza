@@ -22,6 +22,7 @@
         <div class="col-md-12">
           <h2>Order a pizza!</h2>
           <form id="form">
+            <img src="img/pizza.svg">
             <h3>Size</h3>
             <div class="form-row">
               <div class="form-check form-check-inline">
@@ -40,92 +41,55 @@
                 </label>
               </div>
             </div>
-            <h3>Vegetables</h3>
-            <div class="form-row">
-              <div class="form-group col">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="green peppers">
-                    Green Peppers
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="olives">
-                    Olives
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="garlic">
-                    Garlic
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="pineapple">
-                  	Pineapple
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="glass">
-                    Glass
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="banana peppers">
-                    Banana Peppers
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="mushroom">
-                    Mushroom
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="onion">
-                    Onion
-                  </label>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/vegetable.svg">
+                <h3>Vegetables</h3>
+                <div class="form-group">
+                  <div class="form-check">
+                    <ul>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="green peppers">
+                        Green Peppers
+                      </label></li>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="olives">
+                        Olives
+                      </label></li>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="garlic">
+                        Garlic
+                      </label></li>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="pineapple">
+                      	Pineapple
+                      </label></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <h3>Meat and Dairy</h3>
-            <div class="form-row">
-              <div class="form-group col">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="cheese">
-                    Cheese
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="blue cheese">
-                    Blue Cheese
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="yak cheese">
-                    Yak Cheese
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="cat cheese">
-                    Cat Cheese
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="steak">
-                    Steak
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="pepperoni">
-                    Pepperoni
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="cream cheese">
-                    Cream Cheese
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="mozzarella">
-                    Mozzarella
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="brie">
-                    Brie
-                  </label>
-                  <label class="form-check-label">
-                    <input name="toppings-input" type="checkbox" value="eyeball">
-                    Eyeball
-                  </label>
+              <div class="col-md-6">
+                <img src="img/dairy.svg">
+                <h3>Meat and Dairy</h3>
+                <div class="form-group">
+                  <div class="form-check">
+                    <ul>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="cheese">
+                        Cheese
+                      </label></li>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="blue cheese">
+                        Blue Cheese
+                      </label></li>
+                      <li><label class="form-check-label">
+                        <input name="toppings-input" type="checkbox" value="yak cheese">
+                        Yak Cheese
+                      </label></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
               <button type="button" id="deliv" class="btn btn-secondary btn-lg">Delivery?</button>
             <hr>
             <div id="div-deliv">
