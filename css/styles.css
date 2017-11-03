@@ -1,13 +1,21 @@
-.jumbotron{
+#top{
   width: 100%;
+  background-color: #74e4ff;
+  height: 350px;
 }
 
-div .card{
-  border: 7px solid black;
-  width: 700px;
-  padding: 15px;
+div #header{
+  background-color: white;
+  padding: 45px;
+  text-align: center;
+  height: 350;
+  margin-top: 25px;
 }
 
 #form{
   align-self: center;
+}
+
+div .card{
+  margin-bottom: 20px;
 }
