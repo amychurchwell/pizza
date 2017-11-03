@@ -22,83 +22,82 @@
 		</div>
 		<div class="container">
 			<div class="jumbotron" id="form-jumbo">
-					<form id="form" name="form">
-            <h2>Order a pizza!</h2>
-						<img src="img/pizza.svg">
-						<h3>Size</h3>
-						<div class="form-check form-check-inline">
-							<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="small">Small</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="medium">Medium</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="large">Large</label>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<img src="img/vegetable.svg">
-								<h3>Vegetables</h3>
-								<div class="form-group">
-									<div class="form-check">
-										<ul>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="green peppers"> Green Peppers</label>
-											</li>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="olives"> Olives</label>
-											</li>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="garlic"> Garlic</label>
-											</li>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="pineapple"> Pineapple</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<img src="img/dairy.svg">
-								<h3>Meat and Dairy</h3>
-								<div class="form-group">
-									<div class="form-check">
-										<ul>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="cheese"> Cheese</label>
-											</li>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="blue cheese"> Blue Cheese</label>
-											</li>
-											<li>
-												<label class="form-check-label"><input name="toppings-input" type="checkbox" value="yak cheese"> Yak Cheese</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div><button class="btn btn-secondary btn-lg" id="deliv" type="button">Delivery?</button>
-						<div id="div-deliv">
-							<h3>Delivery Address</h3>
-							<div class="form-row">
-								<div class="form-group col-sm-6">
-									<label for="inputName">Name</label> <input class="form-control" id="inputName" placeholder="Name" type="text">
-								</div>
-							</div>
+				<form id="form" name="form">
+          <h2>Order a pizza!</h2>
+					<img src="img/pizza.svg">
+					<h3>Size</h3>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="small">Small</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="medium">Medium</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<label class="form-check-label"><input class="form-check-input" name="size" type="radio" value="large">Large</label>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img/vegetable.svg">
+							<h3>Vegetables</h3>
 							<div class="form-group">
-								<label for="inputAddress">Address</label> <input class="form-control form-control-sm" id="inputAddress" placeholder="1234 Main St" type="text">
+								<div class="form-check">
+									<ul>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="green peppers"> Green Peppers</label>
+										</li>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="olives"> Olives</label>
+										</li>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="garlic"> Garlic</label>
+										</li>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="pineapple"> Pineapple</label>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputCity">City</label> <input class="form-control form-control-sm" placeholder="We only deliver to the Portland area." readonly type="text">
-								</div>
-								<div class="form-group col-md-2">
-									<label for="inputZip">Zip</label> <input class="form-control form-control-sm" id="inputZip" type="text">
-								</div>
-							</div><button class="btn" name="button" type="submit">Order</button>
 						</div>
-					</form>
-
+						<div class="col-sm-6">
+							<img src="img/dairy.svg">
+							<h3>Meat and Dairy</h3>
+							<div class="form-group">
+								<div class="form-check">
+									<ul>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="cheese"> Cheese</label>
+										</li>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="blue cheese"> Blue Cheese</label>
+										</li>
+										<li>
+											<label class="form-check-label"><input name="toppings-input" type="checkbox" value="yak cheese"> Yak Cheese</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><button class="btn btn-secondary btn-lg" id="deliv" type="button">Delivery?</button>
+					<div id="div-deliv">
+						<h3>Delivery Address</h3>
+						<div class="form-row">
+							<div class="form-group col-sm-6">
+								<label for="inputName">Name</label> <input class="form-control" id="inputName" placeholder="Name" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputAddress">Address</label> <input class="form-control form-control-sm" id="inputAddress" placeholder="1234 Main St" type="text">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputCity">City</label> <input class="form-control form-control-sm" placeholder="We only deliver to the Portland area." readonly type="text">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="inputZip">Zip</label> <input class="form-control form-control-sm" id="inputZip" type="text">
+							</div>
+						</div><button class="btn" name="button" type="submit">Order</button>
+					</div>
+				</form>
 			</div>
 			<div class="info">
 				<div class="row">

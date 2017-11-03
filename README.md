@@ -33,7 +33,8 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
 
 ## Known Bugs
 
-We shall see.
+Grid layout needs to be fixed.
+Could benefit from some more CSS.
 
 ## Support and contact details
 
