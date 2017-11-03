@@ -43,7 +43,7 @@ $(document).ready(function(){
     $('#size').text(newPizza.size);
     $('#cost').text("$" + newPizza.pizzaCost());
     $('#delivery').text(name + " " + address + " Portland, " + zip);
-    $('#name').text(name);
+    $('#insertname').text(name + "!");
 
 
     $('.info').fadeIn();
