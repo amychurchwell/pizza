@@ -19,6 +19,7 @@ function Pizza(toppings, size){
      return topCost + 1000;
    }
 };
+
 var newPizza = new Pizza();
 $(document).ready(function(){
 

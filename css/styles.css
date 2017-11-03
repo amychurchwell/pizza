@@ -30,7 +30,6 @@ div #header{
   background-color: white;
   padding: 45px;
   text-align: center;
-  /* height: 350; */
   margin-top: 25px;
   overflow: auto;
 }
@@ -51,7 +50,13 @@ h1{
 }
 
 #form{
-  margin: 30px;
+  width: 500px;
+  position: inherit;
+  margin-left: 30%;
+}
+
+#deliv{
+  margin: 20px;
 }
 
 img{
