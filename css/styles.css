@@ -5,7 +5,13 @@
 }
 
 body{
-  background-color: #e74c3c;
+  background-color: gray;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+  border: black solid 5px;
+  width: 50%;
 }
 
 div #header{
@@ -14,27 +20,36 @@ div #header{
   text-align: center;
   height: 350;
   margin-top: 25px;
-  color: #1d6166;
+  overflow: auto;
+}
+
+#title{
+   font-family: 'Bungee Shade', cursive;
+   font-size: 80px;
+}
+
+h1{
+  font-family: 'Bungee Shade', cursive;
 }
 
 #form-jumbo{
   background-color: white;
+  padding: 30px;
 }
 
 #form{
-  align-self: center;
   margin: 30px;
 }
 
 div .card{
-  display: none;
+  /*display: none;*/
   margin: 70px;
   position: relative;
   height: 300px;
 }
 
 .info{
-  display: none;
+  /*display: none;*/
   position: fixed;
   top: 0;
   bottom: 0;
