@@ -28,6 +28,9 @@ $(document).ready(function(){
   $('#form').submit(function(event){
     event.preventDefault();
 
+    var address = $("input#inputAddress").val();
+    var zip = $("input#inputZip").val();
+
     var size = $("input:radio[name=size]:checked").val();
     newPizza.size = size;
 
@@ -35,9 +38,14 @@ $(document).ready(function(){
     var top = $(this).val();
     newPizza.toppings.push(top)
 
-    $('#results').text("your toppings are: " + newPizza.toppings + "your size is: " + newPizza.size);
+    // $('#form-jumbo').hide();
 
-    $('#cost').text(newPizza.pizzaCost());
+
+    $('#toppings').text(newPizza.toppings);
+    $('#size').text(newPizza.size);
+
+    $('#cost').text("$" + newPizza.pizzaCost());
+    $('#delivery').text(address + " " + zip);
 
     });
   });
