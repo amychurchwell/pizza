@@ -25,15 +25,17 @@ $(document).ready(function(){
   $('#form').submit(function(event){
     event.preventDefault();
 
+    var time = $("input#time").val();
     var address = $("input#inputAddress").val();
     var zip = $("input#inputZip").val();
     var name = $("input#inputName").val();
     var size = $("input:radio[name=size]:checked").val();
     newPizza.size = size;
 
+
     $("input:checkbox[name=toppings-input]:checked").each(function(){
-    var top = $(this).val();
-    newPizza.toppings.push(" " + top)
+      var top = $(this).val();
+      newPizza.toppings.push(" " + top)
     });
 
     $('#toppings').text(newPizza.toppings);
@@ -42,19 +44,19 @@ $(document).ready(function(){
     $('#delivery').text(name + " " + address + " Portland, " + zip);
     $('#name').text(name);
 
-    if((name = " ") || (adress = " ")){
-      alert('Please fill out all fields.')
-    }else{
-      $('.info').fadeIn();
-      $('.card').fadeIn();
-    }
 
+    $('.info').fadeIn();
+    $('.card').fadeIn();
 
     $('#close').click(function(){
       $('.info').fadeOut();
       $('.card').fadeOut();
+    });
+
+
   });
 
-
+  $('#deliv').click(function(){
+    $('#div-deliv').toggle();
   });
 });

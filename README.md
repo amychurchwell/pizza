@@ -12,14 +12,16 @@ Allow the user to choose toppings and size for the pizza they'd like to order.
 ## Specifications
 
 #### 1. User can choose toppings for pizza.
+##### Each topping is $50 extra.
 
-* Example Input:
-* Example Output:
+* Example Input: "small", "cheese", "pepperoni", "olives"
+* Example Output: "Price: $160"
 
 #### 2. User can choose size for pizza.
+##### Small = $10, Medium = $100, Large = $1000
 
-* Example Input:
-* Example Output:
+* Example Input: "large", "mushroom"
+* Example Output: "Price: $1050"
 
 
 ## Setup/Installation Requirements

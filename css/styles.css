@@ -1,3 +1,11 @@
+div #div-deliv{
+  display: none;
+}
+
+div #pick{
+  display: none;
+}
+
 #top{
   width: 100%;
   background-color: #7edbd4;
@@ -5,12 +13,12 @@
 }
 
 body{
-  background-color: gray;
+  background-color: black;
   font-family: 'Open Sans', sans-serif;
 }
 
 hr{
-  border: black solid 5px;
+  border: black solid 3px;
   width: 50%;
 }
 
@@ -40,6 +48,8 @@ h1{
 #form{
   margin: 30px;
 }
+
+
 
 div .card{
   display: none;
