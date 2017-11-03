@@ -20,11 +20,14 @@ $(document).ready(function(){
   $('#form').submit(function(event){
     event.preventDefault();
 
-    $("input:checkbox[name=toppings-input]:checked").each(function(){
-      var yum = $(this).val();
+    var size = $("input:radio[name=size]:checked").val();
+    newPizza.size = size;
 
-    newPizza.toppings.push(yum)
-    $('#results').text(newPizza.toppings);
+    $("input:checkbox[name=toppings-input]:checked").each(function(){
+    var top = $(this).val();
+    newPizza.toppings.push(top)
+
+    $('#results').text("your toppings are: " + newPizza.toppings + "your size is: " + newPizza.size);
 
     });
   });
