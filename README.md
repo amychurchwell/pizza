@@ -1,6 +1,6 @@
-# _Beep, Boop!_
+# _Pizza Parlor_
 
-#### _A web application, October 27, 2017_
+#### _November 3, 2017_
 
 #### By Amy Churchwell
 
