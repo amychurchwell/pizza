@@ -42,14 +42,14 @@ h1{
 }
 
 div .card{
-  /*display: none;*/
+  display: none;
   margin: 70px;
   position: relative;
   height: 300px;
 }
 
 .info{
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;

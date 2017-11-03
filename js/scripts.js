@@ -6,7 +6,6 @@ function Pizza(toppings, size){
   this.size = size;
 }
 
-var newPizza = new Pizza();
 
 //PROTOTYPE METHOD FOR COST DEPENDING ON SELECTIONS
  Pizza.prototype.pizzaCost = function(){
@@ -20,12 +19,8 @@ var newPizza = new Pizza();
      return topCost + 1000;
    }
 };
-
+var newPizza = new Pizza();
 $(document).ready(function(){
-
-  $('#addPizza').click(function(){
-    alert('works');
-});
 
   $('#form').submit(function(event){
     event.preventDefault();
@@ -33,7 +28,6 @@ $(document).ready(function(){
     var address = $("input#inputAddress").val();
     var zip = $("input#inputZip").val();
     var name = $("input#inputName").val();
-
     var size = $("input:radio[name=size]:checked").val();
     newPizza.size = size;
 
@@ -48,9 +42,18 @@ $(document).ready(function(){
     $('#delivery').text(name + " " + address + " Portland, " + zip);
     $('#name').text(name);
 
-    //pop up display//
-    $('.info').show();
-    $('.card').show();
+    if((name = " ") || (adress = " ")){
+      alert('Please fill out all fields.')
+    }else{
+      $('.info').fadeIn();
+      $('.card').fadeIn();
+    }
+
+
+    $('#close').click(function(){
+      $('.info').fadeOut();
+      $('.card').fadeOut();
+  });
 
 
   });
