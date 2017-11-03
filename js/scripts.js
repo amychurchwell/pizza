@@ -36,17 +36,18 @@ $(document).ready(function(){
 
     $("input:checkbox[name=toppings-input]:checked").each(function(){
     var top = $(this).val();
-    newPizza.toppings.push(top)
-
-    // $('#form-jumbo').hide();
-
+    newPizza.toppings.push(" " + top)
+    });
 
     $('#toppings').text(newPizza.toppings);
     $('#size').text(newPizza.size);
-
     $('#cost').text("$" + newPizza.pizzaCost());
-    $('#delivery').text(address + " " + zip);
+    $('#delivery').text(address + " Portland, " + zip);
 
-    });
+    //pop up display//
+    $('.info').show();
+    $('.card').show();
+
+
   });
 });
